@@ -9,14 +9,14 @@ const Home = () => {
         backgroundColor: 'rgba(122, 178, 89, 0.15)',
         padding: theme.spacing(5),
         margin: '4rem 0',
-        clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)',
+ 
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
     }))
     return (
         <Box>
-        <BrandingWrapper>
+        <BrandingWrapper sx={{clipPath:{md:'polygon(0 0, 100% 0, 100% 85%, 0 100%)'}}}>
          <Stack spacing={5}>
             <Typography
                sx={{
