@@ -55,18 +55,22 @@ const Header = (props) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex"
+    }}>
       <AppBar
         position="static"
         component="nav"
         sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+      
+       
       >
-        <Container>
+        <Container  style={{paddingLeft:'0px',paddingRight:'0px'}}>
           <Toolbar
             sx={{
               display: "flex",
               justifyContent: "space-between",
             }}
+            style={{paddingLeft:'0px',paddingRight:'0px'}}
           >
             <img
               src="https://i.ibb.co/JsvBDwD/logo.png"
@@ -82,7 +86,7 @@ const Header = (props) => {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
+              sx={{ mr: 0, display: { sm: "none" } }}
             >
               <MenuIcon></MenuIcon>
             </IconButton>

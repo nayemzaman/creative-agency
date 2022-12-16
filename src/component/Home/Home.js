@@ -1,6 +1,9 @@
 import { Box, Button, Stack, styled, Typography } from '@mui/material';
 import React from 'react';
+import Faq from '../Faq/Faq';
+import OurWorks from '../OurWorks/OurWorks';
 import Service from '../Services/Service';
+import Testimonial from '../Testimonial/Testimonial';
 import Brand from './Brand';
 
 const Home = () => {
@@ -8,8 +11,7 @@ const Home = () => {
         height: '70vh',
         backgroundColor: 'rgba(122, 178, 89, 0.15)',
         padding: theme.spacing(5),
-        margin: '4rem 0',
- 
+        margin: '1rem 0',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -60,6 +62,9 @@ const Home = () => {
         </BrandingWrapper>
         <Brand></Brand>
         <Service></Service>
+        <OurWorks></OurWorks>
+        <Testimonial></Testimonial>
+        <Faq></Faq>
         </Box>
     );
 };
