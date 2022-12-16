@@ -15,7 +15,16 @@ const Faq = () => {
             
           }}
         />
-        <Accor></Accor>
+        <Box sx={{display:'flex',
+      gap:1,
+      flexDirection:'column',
+      mt:5}}>
+        <Accor title={'hello there'} description={'hi there'}></Accor>
+        <Accor title={'hello there'} description={'hi there'}></Accor>
+        <Accor title={'hello there'} description={'hi there'}></Accor>
+        <Accor title={'hello there'} description={'hi there'}></Accor>
+        <Accor title={'hello there'} description={'hi there'}></Accor>
+        </Box>
         </Box>
     );
 };
